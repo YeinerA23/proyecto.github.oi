@@ -1,0 +1,80 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+.header {
+  background: #f5f5f5;
+  padding: 1rem;
+}
+
+.nav {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.nav a {
+  color: #00e4b2;
+  text-decoration: none;
+}
+h1 {
+  text-align: center;
+  color: #00e4b2;
+  margin-bottom: 40px;
+}
+
+.opiniones-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.opinion {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  max-width: 350px;
+  flex: 1 1 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.opinion:hover {
+  transform: translateY(-5px);
+}
+
+.opinion img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+.opinion h3 {
+  margin: 10px 0 5px;
+  color: #00e4b2;
+}
+
+.opinion span {
+  font-size: 0.9em;
+  color: #777;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .opiniones-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

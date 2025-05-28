@@ -1,0 +1,61 @@
+
+<!-- test_emprendimiento.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autodiagnóstico - EmprendeConÉxito</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>EmprendeConÉxito</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="info.html">Información</a></li>
+        <li><a href="test_emprendimiento.html" class="active">Autodiagnóstico</a></li>
+        <li><a href="dashboard.html">Resultados</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="intro-test">
+      <h2>Evalúa tu Perfil Emprendedor</h2>
+      <p>Responde en una escala del 1 (nunca) al 5 (siempre) a estas afirmaciones:</p>
+    </section>
+
+    <form id="form-test">
+      <div class="question">
+        <label>1. Tengo una idea clara de negocio que me apasiona.</label>
+        <select name="q1">
+          <option value="elija">Elejir</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option>
+        </select>
+      </div>
+      <div class="question">
+        <label>2. Me adapto bien a situaciones imprevistas.</label>
+        <select name="q2">
+          <option value="elija">Elejir</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option>
+        </select>
+      </div>
+      <div class="question">
+        <label>3. Busco activamente apoyo y consejo de otros emprendedores.</label>
+        <select name="q3">
+          <option value="elija">Elejir</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option>
+        </select>
+      </div>
+      <div class="question">
+        <label>4. Gestiono bien mi tiempo y mis recursos.</label>
+        <select name="q4">
+          <option value="elija">Elejir</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option>
+        </select>
+      </div>
+      <button type="button" id="btn-submit">Ver resultados</button>
+    </form>
+
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

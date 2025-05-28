@@ -1,0 +1,43 @@
+
+<!-- dashboard.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resultados - EmprendeConÉxito</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>EmprendeConÉxito</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="info.html">Información</a></li>
+        <li><a href="test_emprendimiento.html">Autodiagnóstico</a></li>
+        <li><a href="dashboard.html" class="active">Resultados</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="overview">
+      <h2>Resultados De Emprendedores</h2>
+      <p>Analiza puntos fuertes y áreas de mejora:</p>
+    </section>
+
+    <section id="charts">
+      <div class="chart-container">
+        <canvas id="visionChart"></canvas>
+      </div>
+      <div class="chart-container">
+        <canvas id="skillsChart"></canvas>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,240 @@
+:root {
+  --primary: #FF8C8C; /* Coral suave */
+  --secondary: #5F7380; /* Gris azulado */
+  --bg: #FFFFFF; /* Blanco */
+  --surface: #F7F9FA; /* Gris muy claro */
+  --text: #333333; /* Gris oscuro para texto */
+  --muted: #D6D0EB; /* Lavanda grisáceo */
+  --radius: 0.5rem;
+  --spacing: 1rem;
+  --font-base: 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Reset */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-base);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  font-size: 16px;
+}
+.container {
+  width: min(90%, 1200px);
+  margin: 0 auto;
+  padding: var(--spacing);
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+header {
+  background: var(--secondary);
+  padding: calc(var(--spacing) * 1.5) 0;
+}
+header .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+header h1 {
+  color: #fff;
+  font-size: 2rem;
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing);
+  list-style: none;
+}
+nav a {
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  color: #fff;
+  transition: background 0.3s;
+}
+nav a.active, nav a:hover {
+  background: var(--primary);
+}
+
+/* Hero */
+#hero {
+  background: var(--surface);
+  text-align: center;
+  padding: calc(var(--spacing) * 4) var(--spacing);
+}
+#hero h2 {
+  font-size: 2.5rem;
+  color: var(--secondary);
+  margin-bottom: var(--spacing);
+}
+#hero p {
+  font-size: 1.125rem;
+  color: var(--muted);
+  max-width: 700px;
+  margin: 0 auto var(--spacing);
+}
+.btn {
+  display: inline-block;
+  background: var(--primary);
+  color: #fff;
+  padding: 0.75rem 2rem;
+  border-radius: var(--radius);
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* Features */
+#features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing);
+  margin: calc(var(--spacing) * 3) 0;
+}
+.feature {
+  flex: 1 1 100%;
+  background: var(--secondary);
+  color: #fff;
+  padding: calc(var(--spacing) * 2);
+  border-radius: var(--radius);
+  text-align: center;
+}
+.feature h3 {
+  margin-bottom: var(--spacing);
+}
+.feature p {
+  font-size: 0.95rem;
+}
+
+/* Forms */
+form {
+  background: var(--surface);
+  padding: calc(var(--spacing) * 2);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: var(--spacing) auto;
+}
+.question {
+  margin-bottom: calc(var(--spacing) * 1.5);
+}
+.question label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--muted);
+  border-radius: var(--radius);
+}
+#btn-submit {
+  background: var(--secondary);
+  color: #fff;
+  padding: 0.75rem;
+  border: none;
+  border-radius: var(--radius);
+  width: 100%;
+  font-size: 1rem;
+  cursor: pointer;
+}
+#btn-submit:hover {
+  background: var(--primary);
+}
+
+/* Dashboard */
+#charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing);
+  margin: calc(var(--spacing) * 3) 0;
+}
+.chart-container {
+  background: var(--surface);
+  padding: var(--spacing);
+  border-radius: var(--radius);
+}
+canvas {
+  width: 100% !important;
+  height: auto !important;
+}
+
+/* Footer */
+footer {
+  background: var(--surface);
+  text-align: center;
+  padding: var(--spacing);
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  #hero h2 {
+    font-size: 2rem;
+  }
+  .btn {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  #features {
+    flex-direction: column;
+  }
+
+  #charts {
+    grid-template-columns: 1fr;
+  }
+
+  .feature {
+    flex: 1 1 100%;
+  }
+
+  form {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  #hero h2 {
+    font-size: 1.5rem;
+  }
+
+  #hero p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+  }
+}

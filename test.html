@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Test de Manejo del Estrés</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <section class="test-section">
+    <div class="test-container">
+      <h1 class="test-title">Test de nivel del Estrés</h1>
+      <p class="test-instrucciones"> ¿Te sientes abrumado por el estrés? ¡No te preocupes más! Nuestra calculadora de estrés te brinda una manera rápida y sencilla de evaluar tu nivel de estrés en solo unos pocos clics. Las preguntas en esta escala hacen referencia a tus sentimientos y pensamientos durante el último mes. En cada caso, por favor indica cómo te has sentido o lo que has pensado en cada situación. Al final selecciona VER RESULTADOS y podrás conocer tu nivel de estrés percibido.
+      </p>
+
+      <form id="testForm">
+        <!-- Aquí van las 10 preguntas -->
+        <div class="pregunta">
+          <p>1. ¿Con qué frecuencia te sientes abrumado por tus responsabilidades?</p>
+          <label><input type="radio" name="p1" value="3"> Siempre</label>
+          <label><input type="radio" name="p1" value="2"> A veces</label>
+          <label><input type="radio" name="p1" value="1"> Rara vez</label>
+        </div>
+
+        <div class="pregunta">
+          <p>2. ¿Cómo reaccionas cuando enfrentas una situación inesperada?</p>
+          <label><input type="radio" name="p2" value="3"> Me paralizo o frustro</label>
+          <label><input type="radio" name="p2" value="2"> Me estreso pero actúo</label>
+          <label><input type="radio" name="p2" value="1"> Me mantengo calmado</label>
+        </div>
+
+        <div class="pregunta">
+          <p>3. ¿Qué tan bien duermes por las noches?</p>
+          <label><input type="radio" name="p3" value="3"> Duermo mal</label>
+          <label><input type="radio" name="p3" value="2"> Algunas noches bien</label>
+          <label><input type="radio" name="p3" value="1"> Duermo bien</label>
+        </div>
+
+        <div class="pregunta">
+          <p>4. ¿Sufres de dolores físicos sin explicación médica clara?</p>
+          <label><input type="radio" name="p4" value="3"> Muy seguido</label>
+          <label><input type="radio" name="p4" value="2"> Ocasionalmente</label>
+          <label><input type="radio" name="p4" value="1"> Casi nunca</label>
+        </div>
+
+        <div class="pregunta">
+          <p>5. ¿Qué haces cuando te sientes estresado?</p>
+          <label><input type="radio" name="p5" value="3"> Me aíslo o exploto</label>
+          <label><input type="radio" name="p5" value="2"> Hablo con alguien</label>
+          <label><input type="radio" name="p5" value="1"> Uso técnicas calmantes</label>
+        </div>
+
+        <div class="pregunta">
+          <p>6. ¿Sientes que tienes control sobre tu vida diaria?</p>
+          <label><input type="radio" name="p6" value="3"> Muy poco</label>
+          <label><input type="radio" name="p6" value="2"> A veces</label>
+          <label><input type="radio" name="p6" value="1"> Sí, la mayoría del tiempo</label>
+        </div>
+
+        <div class="pregunta">
+          <p>7. ¿Con qué frecuencia te tomas tiempo para ti?</p>
+          <label><input type="radio" name="p7" value="3"> Casi nunca</label>
+          <label><input type="radio" name="p7" value="2"> A veces</label>
+          <label><input type="radio" name="p7" value="1"> Regularmente</label>
+        </div>
+
+        <div class="pregunta">
+          <p>8. ¿Te cuesta concentrarte bajo presión?</p>
+          <label><input type="radio" name="p8" value="3"> Sí, mucho</label>
+          <label><input type="radio" name="p8" value="2"> A veces</label>
+          <label><input type="radio" name="p8" value="1"> No, mantengo el enfoque</label>
+        </div>
+
+        <div class="pregunta">
+          <p>9. ¿Cómo es tu alimentación en épocas de estrés?</p>
+          <label><input type="radio" name="p9" value="3"> Muy desordenada</label>
+          <label><input type="radio" name="p9" value="2"> Varía bastante</label>
+          <label><input type="radio" name="p9" value="1"> Mantengo hábitos sanos</label>
+        </div>
+
+        <div class="pregunta">
+          <p>10. ¿Tienes alguna rutina de manejo del estrés?</p>
+          <label><input type="radio" name="p10" value="3"> No tengo ninguna</label>
+          <label><input type="radio" name="p10" value="2"> Algunas veces</label>
+          <label><input type="radio" name="p10" value="1"> Sí, es constante</label>
+        </div>
+
+        <button type="button" onclick="calcularResultado()">Ver Resultado</button>
+      </form>
+
+      <div class="resultado" id="resultado"></div>
+    </div>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+</html>

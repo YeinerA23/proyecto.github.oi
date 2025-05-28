@@ -1,0 +1,103 @@
+/* estilos.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+
+.header {
+  background: #f5f5f5;
+  padding: 1rem;
+}
+
+.nav {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.nav a {
+  color: #00e4b2;
+  text-decoration: none;
+}
+
+main {
+  padding: 2rem 1rem;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+.intro-icon img {
+  width: 300px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.intro-text h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #00e4b2;
+}
+
+.intro-text p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  background-color: #00e4b2;
+  color: white;
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.razones {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.razon img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.razon h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.7rem;
+  color: #222;
+}
+
+.razon p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+
+
