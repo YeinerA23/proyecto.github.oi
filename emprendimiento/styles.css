@@ -1,14 +1,15 @@
 :root {
-  --primary: #FF8C8C; /* Coral suave */
-  --secondary: #5F7380; /* Gris azulado */
-  --bg: #FFFFFF; /* Blanco */
-  --surface: #F7F9FA; /* Gris muy claro */
-  --text: #333333; /* Gris oscuro para texto */
-  --muted: #D6D0EB; /* Lavanda grisáceo */
+  --primary: #00f5d4;       /* Turquesa brillante (títulos) */
+  --secondary: #00f0a8;     /* Verde esmeralda (botones) */
+  --bg: #ffffff;            /* Blanco (fondo) */
+  --surface: #ffffff;       /* Negro/gris oscuro (fondo menú) */
+  --text: #1a1a1a;          /* Texto oscuro general */
+  --muted: #000000;         /* Cian claro (hover/enlaces activos) */
   --radius: 0.5rem;
   --spacing: 1rem;
   --font-base: 'Helvetica Neue', Arial, sans-serif;
 }
+
 
 /* Reset */
 *, *::before, *::after {
@@ -101,26 +102,52 @@ nav a.active, nav a:hover {
 }
 
 /* Features */
-#features {
-  display: flex;
-  flex-wrap: wrap;
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: var(--spacing);
-  margin: calc(var(--spacing) * 3) 0;
+  margin-top: var(--spacing);
 }
-.feature {
-  flex: 1 1 100%;
-  background: var(--secondary);
-  color: #fff;
-  padding: calc(var(--spacing) * 2);
+
+.card {
+  background-color: var(--surface);
+  border: 2px solid var(--muted);
   border-radius: var(--radius);
-  text-align: center;
+  padding: var(--spacing);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.feature h3 {
-  margin-bottom: var(--spacing);
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
 }
-.feature p {
-  font-size: 0.95rem;
+
+.card h3 {
+  color: var(--secondary);
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
 }
+
+.card p {
+  color: var(--text);
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.card ul {
+  padding-left: 1.2rem;
+  color: var(--text);
+}
+
+.card ul li {
+  margin-bottom: 0.5rem;
+  list-style-type: "✓ ";
+  padding-left: 0.5rem;
+  color: black;
+  font-weight: 500;
+}
+
 
 /* Forms */
 form {
