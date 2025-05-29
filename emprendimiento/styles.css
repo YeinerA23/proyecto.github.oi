@@ -1,6 +1,6 @@
 :root {
   --primary: #00f5d4;       /* Turquesa brillante (títulos) */
-  --secondary: #00f0a8;     /* Verde esmeralda (botones) */
+  --secondary: #000000;     /* Verde esmeralda (botones) */
   --bg: #ffffff;            /* Blanco (fondo) */
   --surface: #ffffff;       /* Negro/gris oscuro (fondo menú) */
   --text: #1a1a1a;          /* Texto oscuro general */
